@@ -1,0 +1,371 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training HCI Aceh</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="hci aceh.css">
+    <link rel="icon" href="gambar/hci.png" type="image/png">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+        html, body {
+            height: 100%; /* Mengisi 100% tinggi */
+            margin: 0; /* Menghapus margin default */
+        }
+
+        body {
+            display: flex; /* Flex container */
+            flex-direction: column; /* Arah kolom */
+        }
+
+        .footer {
+            margin-top: auto; /* Memindahkan footer ke bawah */
+            background-color: #2e3033; /* Warna latar belakang footer */
+            padding: 10px; /* Padding pada footer */
+            text-align: center; /* Rata tengah teks di footer */
+        }
+    </style>
+    <style>
+        .nav-link {
+            font-weight: bold; /* Mengatur teks menu menjadi tebal */
+        }
+    </style>
+    <style>
+        @media (max-width: 767.98px) {
+            .navbar-nav {
+                display: flex;
+                flex-direction: column; /* Ubah arah menu menjadi kolom */
+                align-items: flex-end; /* Rata kanan */
+            }
+        }
+    </style>
+
+    <style>
+    .nav-link {
+        color: #ffffff; /* Warna teks default */
+        font-weight: bold; /* Mengatur teks menu menjadi tebal */
+        transition: color 0.3s; /* Efek transisi halus */
+    }
+
+    .nav-link:hover {
+        color: #FF5733; /* Warna teks saat hover */
+    }
+
+    @media (max-width: 767.98px) {
+        .navbar-nav {
+            display: flex;
+            flex-direction: column; /* Ubah arah menu menjadi kolom */
+            align-items: flex-end; /* Rata kanan */
+        }
+    }
+    </style>
+    <style>
+    .gallery-container {
+        overflow: hidden; /* Sembunyikan gambar yang keluar dari kontainer */
+        position: relative; /* Mengatur posisi relatif untuk marquee */
+        width: 100%; /* Lebar penuh kontainer */
+    }
+
+    .marquee {
+        display: flex; /* Gunakan flexbox untuk gambar bergerak bersebelahan */
+        animation: marquee 15s linear infinite; /* Durasi dan jenis animasi */
+        width: calc(200%); /* Mengatur lebar dua kali dari kontainer untuk efek berkelanjutan */
+    }
+
+    .gallery-image {
+        width: 300px; /* Atur lebar gambar sesuai kebutuhan */
+        height: auto; /* Tinggi akan disesuaikan agar proporsional */
+        margin-right: 10px; /* Jarak antara gambar */
+    }
+
+    @keyframes marquee {
+        0% {
+            transform: translateX(0); /* Mulai dari posisi awal */
+        }
+        100% {
+            transform: translateX(-50%); /* Bergeser setengah dari lebar marquee */
+        }
+    }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+            <img src="gambar/hci.png" alt="traininghciaceh" class="logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="ph ph-list"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link " href="hci aceh.html" style="color: #ffffff;">Beranda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="outbound.html" style="color: #ffffff;">Outbound</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html" style="color: #ffffff;">Tentang Kami</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kontak.html" style="color: #ffffff;">Kontak</a>
+                </li>
+            </ul>
+            <div class="indicator"></div>
+        </div>
+    </nav>
+
+    <script>
+        const currentLocation = window.location.href;
+        const menuItems = document.querySelectorAll('.nav-link');
+    
+        menuItems.forEach(item => {
+            if(item.href === currentLocation) {
+                item.classList.add('active');
+            }
+        });
+    </script>
+
+<section id="hero">
+        <div class="container">
+            <h1 class="display-4">Training HCI Aceh</h1>
+            <p class="lead">Berbicara Bukan Eksplorasi Kata Melainkan Transfer Rasa</p>
+            <a href="https://wa.me/+6282365696724" class="btn btn-primary">Hubungi Sekarang</a>
+        </div>
+    </section>
+    <section id="about" class="py-5">
+            <div class="container">
+                <h2 class="text-center mb-4">Kategori Pelatihan</h2>
+                <div class="row">
+                    <!-- Card 1 -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="gambar/44-100.jpg" class="card-img-top" alt="Kategori 1">
+                            <div class="card-body">
+                                <h5 class="card-title">Outbound Parenting</h5>
+                                <p class="card-text">Deskripsi singkat mengenai kategori pelatihan 1.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 2 -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="gambar/47-100.jpg" class="card-img-top" alt="Kategori 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Wisata Edukasi</h5>
+                                <p class="card-text">Deskripsi singkat mengenai kategori pelatihan 2.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Card 3 -->
+                    <div class="col-md-4">
+                        <div class="card">
+                            <img src="gambar/68-100.jpg" class="card-img-top" alt="Kategori 2">
+                            <div class="card-body">
+                                <h5 class="card-title">Seminar Parenting</h5>
+                                <p class="card-text">Deskripsi singkat mengenai kategori pelatihan 2.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+    </section>
+    <section id="gallery">
+        <h2 style="text-align: center;">Galeri Kegiatan</h2>
+        <div class="gallery-container">
+            <div class="marquee">
+                <img src="gambar/p1.jpg" alt="Deskripsi Gambar 1" class="gallery-image">
+                <img src="gambar/p2.jpg" alt="Deskripsi Gambar 2" class="gallery-image">
+                <img src="gambar/p3.jpg" alt="Deskripsi Gambar 3" class="gallery-image">
+                <img src="gambar/p4.jpg" alt="Deskripsi Gambar 4" class="gallery-image">
+                <img src="gambar/p1.jpg" alt="Deskripsi Gambar 1" class="gallery-image">
+                <img src="gambar/p2.jpg" alt="Deskripsi Gambar 2" class="gallery-image">
+                <img src="gambar/p3.jpg" alt="Deskripsi Gambar 3" class="gallery-image">
+                <img src="gambar/p4.jpg" alt="Deskripsi Gambar 4" class="gallery-image">
+                <img src="gambar/p1.jpg" alt="Deskripsi Gambar 1" class="gallery-image">
+                <img src="gambar/p2.jpg" alt="Deskripsi Gambar 2" class="gallery-image">
+                <img src="gambar/p3.jpg" alt="Deskripsi Gambar 3" class="gallery-image">
+                <img src="gambar/p4.jpg" alt="Deskripsi Gambar 4" class="gallery-image">
+            </div>
+        </div>
+    </section>
+    <section id="testimoni" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Testimoni</h2>
+            <div id="testimonialCarousel" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#testimonialCarousel" data-slide-to="0" class="active"></li>
+                    <li data-target="#testimonialCarousel" data-slide-to="1"></li>
+                    <li data-target="#testimonialCarousel" data-slide-to="2"></li>
+                </ol>
+    
+                <!-- Carousel Items -->
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="row justify-content-center">
+                            <div class="col-md-6 text-center">
+                                <img src="gambar/bb.png" class="rounded-circle mb-4" alt="Testimoni 1" style="width: 150px; height: 150px;">
+                                <blockquote class="blockquote">
+                                    <p class="mb-0">"Pelatihan yang luar biasa!"</p>
+                                    <footer class="blockquote-footer">Guru</footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-md-6 text-center">
+                                <img src="gambar/bb.png" class="rounded-circle mb-4" alt="Testimoni 2" style="width: 150px; height: 150px;">
+                                <blockquote class="blockquote">
+                                    <p class="mb-0">"Sangat membantu meningkatkan keterampilan saya."</p>
+                                    <footer class="blockquote-footer">Karyawan</footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="row justify-content-center">
+                            <div class="col-md-6 text-center">
+                                <img src="gambar/bb.png" class="rounded-circle mb-4" alt="Testimoni 3" style="width: 150px; height: 150px;">
+                                <blockquote class="blockquote">
+                                    <p class="mb-0">"Pengalaman yang tidak akan saya lupakan!"</p>
+                                    <footer class="blockquote-footer">Murid</footer>
+                                </blockquote>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+    
+                <!-- Left and Right Controls -->
+                <a class="carousel-control-prev" href="#testimonialCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="carousel-control-next" href="#testimonialCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+        </div>
+    </section>
+    
+    <!-- JavaScript for enabling swipe functionality -->
+    <script>
+        // Mengambil elemen carousel
+        const testimonialCarousel = document.getElementById('testimonialCarousel');
+    
+        let touchStartX = 0;
+        let touchEndX = 0;
+    
+        testimonialCarousel.addEventListener('touchstart', (event) => {
+            touchStartX = event.changedTouches[0].screenX;
+        });
+    
+        testimonialCarousel.addEventListener('touchend', (event) => {
+            touchEndX = event.changedTouches[0].screenX;
+            handleSwipeGesture();
+        });
+    
+        function handleSwipeGesture() {
+            if (touchEndX < touchStartX) {
+                $('#testimonialCarousel').carousel('next'); // Geser ke kanan
+            } else if (touchEndX > touchStartX) {
+                $('#testimonialCarousel').carousel('prev'); // Geser ke kiri
+            }
+        }
+    </script>  
+    
+    <section id="mentors" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Mentor Kami</h2>
+            <div class="row">
+                <div class="col-md-4 mentor">
+                    <img src="gambar/men.png" class="img-fluid rounded-circle mb-3 mentor-photo" alt="Mentor 1">
+                    <h5 class="text-center">Mentor 1</h5>
+                </div>
+                <div class="col-md-4 mentor">
+                    <img src="gambar/men.png" class="img-fluid rounded-circle mb-3 mentor-photo" alt="Mentor 2">
+                    <h5 class="text-center">Mentor 2</h5>
+                </div>
+                <div class="col-md-4 mentor">
+                    <img src="gambar/men.png" class="img-fluid rounded-circle mb-3 mentor-photo" alt="Mentor 3">
+                    <h5 class="text-center">Mentor 3</h5>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <script>
+        // Fungsi untuk mengecek apakah elemen berada di viewport
+        function isElementInViewport(el) {
+            const rect = el.getBoundingClientRect();
+            return (
+                rect.top >= 0 &&
+                rect.left >= 0 &&
+                rect.bottom <= (window.innerHeight || document.documentElement.clientHeight) &&
+                rect.right <= (window.innerWidth || document.documentElement.clientWidth)
+            );
+        }
+    
+        // Fungsi untuk menambahkan kelas show
+        function showMentorPhotos() {
+            const mentorPhotos = document.querySelectorAll('.mentor-photo');
+            mentorPhotos.forEach(photo => {
+                if (isElementInViewport(photo)) {
+                    photo.classList.add('show');
+                }
+            });
+        }
+    
+        // Jalankan fungsi ketika halaman di-scroll
+        window.addEventListener('scroll', showMentorPhotos);
+    
+        // Jalankan fungsi untuk mengecek ketika halaman pertama kali dimuat
+        showMentorPhotos();
+    </script>
+    
+        <!-- Add more content here -->
+    <footer class="footer">
+        <p>&copy; 2024 Training HCI Aceh. All rights reserved.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    <script src="/script.js"></script>
+    <script>
+        const currentLocation = window.location.href;
+        const menuItems = document.querySelectorAll('.nav-link');
+        const indicator = document.querySelector('.indicator'); // Ambil elemen penanda
+    
+        menuItems.forEach(item => {
+            if (item.href === currentLocation) {
+                item.classList.add('active');
+                const activeLink = item; // Simpan elemen aktif
+                
+                // Pindahkan penanda ke posisi elemen aktif
+                const offset = activeLink.offsetLeft; // Posisi kiri elemen aktif
+                const width = activeLink.offsetWidth; // Lebar elemen aktif
+                indicator.style.left = `${offset}px`; // Set posisi kiri penanda
+                indicator.style.width = `${width}px`; // Set lebar penanda
+            } else {
+                item.classList.remove('active');
+            }
+        });
+    
+        // Tambahkan event listener untuk menu yang di-klik
+        menuItems.forEach(item => {
+            item.addEventListener('click', function() {
+                const offset = item.offsetLeft; // Dapatkan posisi kiri
+                const width = item.offsetWidth; // Dapatkan lebar
+    
+                // Set posisi dan lebar penanda dengan animasi
+                indicator.style.left = `${offset}px`;
+                indicator.style.width = `${width}px`;
+            });
+        });
+    </script>
+    
+    
+</body>
+</html>

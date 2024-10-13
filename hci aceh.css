@@ -1,0 +1,264 @@
+/* Global Styles */
+
+body {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: #ffffff;
+  background-image: radial-gradient(circle 248px at center, #222831 0%,#222831 47%, #222831 100%);
+}
+
+a {
+  text-decoration: none;
+  color: #337ab7;
+}
+
+a:hover {
+  color: #23527c;
+}
+
+/* Navbar Styles */
+
+.navbar {
+  background-color: #cccccc9a;
+  padding: 1rem 2rem;
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #fff;
+}
+
+.navbar-brand img {
+  width: 50px;
+  height: 50px;
+  margin-right: 10px;
+}
+
+.navbar-nav {
+  margin-left: auto;
+}
+
+.nav-item {
+  margin-right: 20px;
+}
+
+.nav-link {
+  color: #ffffff; /* Warna teks default */
+  font-weight: bold; /* Mengatur teks menu menjadi tebal */
+  transition: color 0.3s; /* Efek transisi halus */
+}
+
+.nav-link:hover {
+  color: #FF5733; /* Warna teks saat hover */
+}
+
+.nav-link.active {
+  color: #ffffff; /* Ganti dengan warna yang diinginkan untuk menu aktif */
+}
+
+.nav-link:hover {
+  color: #337ab7;
+}
+
+/* Hero Section Styles */
+
+#hero {
+  background-image: radial-gradient(circle 248px at center, #393E46 0%, #393E46 47%, #393E46 100%);
+  padding: 50px;
+  text-align: center;
+  color: #fff;
+}
+
+#hero h1 {
+  font-size: 3rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#hero p {
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+#hero button {
+  background-color: #3d8ae2;
+  color: #fff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+#hero button:hover {
+  background-color: #23527c;
+}
+
+/* About Section Styles */
+.social-media {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  justify-content: center;
+}
+
+.social-media li {
+  margin-right: 20px;
+}
+
+.social-media a {
+  display: inline-block;
+  border-radius: 50%;
+  background-color: #ffffff;
+  text-align: center;
+  width: 36px; 
+  height: 36px; 
+  transition: background-color 0.5s ease;
+  
+}
+
+.social-media a:hover {
+  transform: scale(1.1); 
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.social-media img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.social-media li img {
+  width: 36px; 
+  height: 36px; 
+  transform: scale(1.2) 1.0s ease;
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.card {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Bayangan custom */
+}
+
+.card-title {
+  color: #000000; /* Ganti dengan warna judul yang diinginkan */
+}
+
+.card-text {
+  color: #000000; /* Ganti dengan warna teks deskripsi yang diinginkan */
+}
+
+.rounded-circle {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.mentor-photo {
+  opacity: 0; /* Awalnya tidak terlihat */
+  transform: translateY(50px); /* Mulai dari posisi 50px di bawah */
+  transition: opacity 0.6s ease-out, transform 0.6s ease-out;
+}
+
+.mentor-photo.show {
+  opacity: 1; /* Muncul */
+  transform: translateY(0); /* Geser ke posisi asli */
+}
+
+.logo {
+  width: 100px; /* Atur ukuran logo sesuai kebutuhan */
+  height: auto; /* Menjaga rasio aspek */
+  filter: drop-shadow(2px 2px 1px rgba(0, 0, 0, 0.2)); /* Bayangan dengan box-shadow */
+  /* Atau gunakan filter drop-shadow:
+  filter: drop-shadow(2px 2px 10px rgba(0, 0, 0, 0.5)); */
+}
+
+#visi-misi h3 {
+  color: #0099ff; /* Warna biru untuk judul */
+}
+#visi-misi p, #visi-misi ul li {
+  color: #000000; /* Warna abu-abu tua untuk teks deskripsi dan daftar */
+}
+
+#kategori-paket h5 {
+  color: #3498db; /* Warna biru untuk judul kategori */
+}
+#kategori-paket p {
+  color: #2c3e50; /* Warna teks deskripsi */
+}
+#kategori-paket ul {
+  list-style-type: none; /* Hilangkan bullet point di daftar paket */
+  padding: 0;
+}
+#kategori-paket ul li {
+  padding: 5px 0; /* Jarak antar item paket */
+  color: #2c3e50;
+  text-align: center;
+}
+
+.nav-link {
+  font-weight: bold; /* Teks tebal */
+  color: white;
+  position: relative;
+  transition: all 0.3s ease; /* Transisi halus */
+}
+
+/* Animasi latar belakang ketika menu aktif */
+.nav-link::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 3px;
+  background-color: #3498db; /* Warna latar aktif */
+  transition: width 0.4s ease;
+}
+
+.nav-item.active .nav-link::before {
+  width: 100%;
+}
+
+.nav-item .nav-link.active {
+  background-color: #3498db; /* Latar belakang ketika aktif */
+  color: white;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-nav {
+  position: relative; /* Agar indicator dapat diposisikan relatif terhadap menu */
+}
+
+.nav-link {
+  position: relative;
+  color: #ffffff; /* Ubah warna teks jika diperlukan */
+  transition: color 0.3s ease; /* Transisi halus untuk warna teks */
+}
+
+.indicator {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0; /* Mulai dengan lebar 0 */
+  height: 3px; /* Tinggi penanda */
+  background-color: #3498db; /* Warna penanda */
+  transition: left 0.3s ease, width 0.3s ease; /* Transisi halus untuk posisi dan lebar */
+}
+
+
+@keyframes fadeIn {
+  from {
+      opacity: 0;
+  }
+  to {
+      opacity: 1;
+  }
+}
+
+.card-body {
+  animation: fadeIn 0.5s ease-in; /* Efek fade-in saat muncul */
+}

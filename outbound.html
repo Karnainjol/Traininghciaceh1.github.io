@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training HCI Aceh</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="hci aceh.css">
+    <link rel="icon" href="gambar/hci.png" type="image/png">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+        html, body {
+            height: 100%; /* Mengisi 100% tinggi */
+            margin: 0; /* Menghapus margin default */
+        }
+
+        body {
+            display: flex; /* Flex container */
+            flex-direction: column; /* Arah kolom */
+        }
+
+        .footer {
+            margin-top: auto; /* Memindahkan footer ke bawah */
+            background-color: #2e3033; /* Warna latar belakang footer */
+            padding: 10px; /* Padding pada footer */
+            text-align: center; /* Rata tengah teks di footer */
+        }
+    </style>
+    <style>
+        .nav-link {
+            font-weight: bold; /* Mengatur teks menu menjadi tebal */
+        }
+    </style>
+    <style>
+        @media (max-width: 767.98px) {
+            .navbar-nav {
+                display: flex;
+                flex-direction: column; /* Ubah arah menu menjadi kolom */
+                align-items: flex-end; /* Rata kanan */
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+            <img src="gambar/hci.png" alt="traininghciaceh" class="logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="ph ph-list"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link " href="hci aceh.html" style="color: #ffffff;">Beranda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="outbound.html" style="color: #ffffff;">Outbound</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html" style="color: #ffffff;">Tentang Kami</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kontak.html" style="color: #ffffff;">Kontak</a>
+                </li>
+            </ul>
+            <div class="indicator"></div>
+        </div>
+    </nav>
+
+    <script>
+        const currentLocation = window.location.href;
+        const menuItems = document.querySelectorAll('.nav-link');
+    
+        menuItems.forEach(item => {
+            if(item.href === currentLocation) {
+                item.classList.add('active');
+            }
+        });
+    </script>
+
+    <section id="hero">
+        <div class="container">
+            <h1 class="display-4">Training HCI Aceh</h1>
+            <p class="lead">Berbicara Bukan Eksplorasi Kata Melainkan Transfer Rasa</p>
+            <a href="https://wa.me/+6282365696724" class="btn btn-primary">Hubungi Sekarang</a>
+        </div>
+    </section>
+    <section id="kategori-paket" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4" style="color: #e74c3c; font-family: 'Roboto', sans-serif;">Kategori dan Paket Pelatihan</h2>
+            <div class="row">
+                <!-- Kategori 1 -->
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm hover-effect">
+                        <img src="gambar/44-100.jpg" class="card-img-top" alt="Outbound & Fun Game" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #3498db; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);">Outbound & Fun Game</h5>
+                            <p class="card-text" style="color: #555; line-height: 1.6;">Pelatihan yang berfokus pada kegiatan outbound dan permainan tim untuk meningkatkan kerja sama dan leadership.</p>
+                           
+                        </div>
+                    </div>
+                </div>
+                <!-- Kategori 2 -->
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm hover-effect">
+                        <img src="gambar/47-100.jpg" class="card-img-top" alt="Motivator & Parenting" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #3498db; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);">Motivator & Parenting</h5>
+                            <p class="card-text" style="color: #555; line-height: 1.6;">Sesi pelatihan yang memberikan inspirasi dan motivasi untuk pengembangan diri dan keluarga.</p>
+                            
+                        </div>
+                    </div>
+                </div>
+                <!-- Kategori 3 -->
+                <div class="col-md-4">
+                    <div class="card mb-4 shadow-sm hover-effect">
+                        <img src="gambar/68-100.jpg" class="card-img-top" alt="Wisata Edukasi" style="height: 200px; object-fit: cover;">
+                        <div class="card-body">
+                            <h5 class="card-title" style="color: #3498db; text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);">Wisata Edukasi</h5>
+                            <p class="card-text" style="color: #555; line-height: 1.6;">Program wisata yang dikemas dengan edukasi dan pembelajaran praktis di lapangan.</p>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <style>
+        .hover-effect {
+            transition: transform 0.2s; /* Efek transisi halus */
+        }
+
+        .hover-effect:hover {
+            transform: scale(1.10); /* Membesarkan sedikit saat hover */
+        }
+        </style>
+    
+    <section id="about">
+        <h2 style="text-align: center;">Hubungi kami</h2>
+        <ul class="social-media">
+          <li><a href="https://www.facebook.com/traininghciaceh" target="_blank"><img src="gambar/fb.png" alt="Facebook"></a></li>
+          <li><a href="https://wa.me/+6282365696724" target="_blank"><img src="gambar/wa.png" alt="Twitter"></a></li>
+          <li><a href="https://www.instagram.com/traininghciaceh" target="_blank"><img src="gambar/ig.png" alt="Instagram"></a></li>
+          <li><a href="https://www.youtube.com/@traininghciaceh" target="_blank"><img src="gambar/yt.png" alt="YouTube"></a></li>
+        </ul>
+        <!-- Add more content here -->
+    </section>
+    <footer class="footer">
+        <p>&copy; 2024 Training HCI Aceh. All rights reserved.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    <script src="/script.js"></script>
+    
+</body>
+</html>

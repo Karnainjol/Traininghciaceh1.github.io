@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Training HCI Aceh</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="hci aceh.css">
+    <link rel="icon" href="gambar/hci.png" type="image/png">
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <style>
+        html, body {
+            height: 100%; /* Mengisi 100% tinggi */
+            margin: 0; /* Menghapus margin default */
+        }
+
+        body {
+            display: flex; /* Flex container */
+            flex-direction: column; /* Arah kolom */
+        }
+
+        .footer {
+            margin-top: auto; /* Memindahkan footer ke bawah */
+            background-color: #2e3033; /* Warna latar belakang footer */
+            padding: 10px; /* Padding pada footer */
+            text-align: center; /* Rata tengah teks di footer */
+        }
+    </style>
+    <style>
+        .nav-link {
+            font-weight: bold; /* Mengatur teks menu menjadi tebal */
+        }
+    </style>
+    <style>
+        @media (max-width: 767.98px) {
+            .navbar-nav {
+                display: flex;
+                flex-direction: column; /* Ubah arah menu menjadi kolom */
+                align-items: flex-end; /* Rata kanan */
+            }
+        }
+    </style>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light">
+        <a class="navbar-brand" href="#">
+            <img src="gambar/hci.png" alt="traininghciaceh" class="logo" />
+        </a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <i class="ph ph-list"></i>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link " href="hci aceh.html" style="color: #ffffff;">Beranda</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="outbound.html" style="color: #ffffff;">Outbound</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="about.html" style="color: #ffffff;">Tentang Kami</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="kontak.html" style="color: #ffffff;">Kontak</a>
+                </li>
+            </ul>
+            <div class="indicator"></div>
+        </div>
+    </nav>
+
+    <script>
+        const currentLocation = window.location.href;
+        const menuItems = document.querySelectorAll('.nav-link');
+    
+        menuItems.forEach(item => {
+            if(item.href === currentLocation) {
+                item.classList.add('active');
+            }
+        });
+    </script>
+
+    <section id="hero">
+        <div class="container">
+            <h1 class="display-4">Training HCI Aceh</h1>
+            <p class="lead">Berbicara Bukan Eksplorasi Kata Melainkan Transfer Rasa</p>
+            <a href="https://wa.me/+6282365696724" class="btn btn-primary">Hubungi Sekarang</a>
+        </div>
+    </section>
+
+    <section id="visi-misi" class="py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Visi dan Misi</h2>
+            <div class="row">
+                <div class="col-md-6">
+                    <h3>Visi</h3>
+                    <p>Menjadi lembaga pelatihan terdepan di Aceh yang berfokus pada pengembangan sumber daya manusia melalui pendidikan dan pelatihan yang inovatif, menyenangkan, dan bermanfaat bagi masyarakat.</p>
+                </div>
+                <div class="col-md-6">
+                    <h3>Misi</h3>
+                    <ul>
+                        <li>Menyediakan pelatihan berkualitas tinggi yang relevan dengan kebutuhan pasar kerja dan perkembangan zaman.</li>
+                        <li>Mendorong pengembangan karakter dan keterampilan komunikasi melalui program-program interaktif dan inspiratif.</li>
+                        <li>Mengembangkan kemitraan strategis dengan lembaga pendidikan, pemerintah, dan komunitas lokal untuk meningkatkan akses pelatihan.</li>
+                        <li>Mewujudkan lingkungan belajar yang inklusif, menyenangkan, dan mendukung partisipasi aktif dari seluruh peserta pelatihan.</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="footer">
+        <p>&copy; 2024 Training HCI Aceh. All rights reserved.</p>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.6.0/dist/js/bootstrap.min.js"></script>
+    <script src="/script.js"></script>
+    
+</body>
+</html>
